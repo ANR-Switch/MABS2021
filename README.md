@@ -1,5 +1,5 @@
-# Micro-Meso
-IDM and Event-Driven Queue-Based coupling toy model (micro).
+# MABS 2021: Exploration of model coupling strategies in a hybrid agent-based traffic simulation
+IDM and Event-Driven Queue-Based coupling. Studies the impact of coupling different models of traffic simulation within an agent-based framework
 
 ## Based on
  - Derbel and al. - Modified Intelligent Driver Model for Driver Safety and Traffic Stability Improvement
