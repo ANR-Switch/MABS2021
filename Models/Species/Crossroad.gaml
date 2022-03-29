@@ -63,12 +63,12 @@ species Crossroad {
 					if in.id != out.id {
 						// Merge all points
 						list<point> line;
-						loop point over: in.shape.points {
-							add point to: line;
+						loop pt over: in.shape.points {
+							add pt to: line;
 						}
 
-						loop point over: out.shape.points {
-							add point to: line;
+						loop pt over: out.shape.points {
+							add pt to: line;
 						}
 
 						in.shape <- polyline(line);

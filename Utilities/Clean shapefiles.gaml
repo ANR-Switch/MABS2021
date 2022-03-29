@@ -164,12 +164,12 @@ global {
 							if not dead(out) and out.type = in.type {
 								// Merge all points
 								list<point> line;
-								loop point over: in.shape.points {
-									add point to: line;
+								loop pt over: in.shape.points {
+									add pt to: line;
 								}
 
-								loop point over: out.shape.points {
-									add point to: line;
+								loop pt over: out.shape.points {
+									add pt to: line;
 								}
 
 								in.shape <- polyline(line);
@@ -196,12 +196,12 @@ global {
 							if not dead(in) and in.type = out.type {
 							// Merge all points
 								list<point> line;
-								loop point over: in.shape.points {
-									add point to: line;
+								loop pt over: in.shape.points {
+									add pt to: line;
 								}
 
-								loop point over: out.shape.points {
-									add point to: line;
+								loop pt over: out.shape.points {
+									add pt to: line;
 								}
 
 								out.shape <- polyline(line);
@@ -267,7 +267,7 @@ species road {
 species boundary {
 
 	aspect default {
-		draw shape border: #grey empty: true;
+		draw shape border: #grey wireframe: true;
 	}
 
 }

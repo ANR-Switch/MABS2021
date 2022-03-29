@@ -187,7 +187,7 @@ global {
 species Boundary {
 
 	aspect default {
-		draw shape border: #grey empty: true;
+		draw shape border: #grey wireframe: true;
 	}
 
 }

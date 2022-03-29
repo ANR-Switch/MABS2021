@@ -731,7 +731,7 @@ species Building {
 species Boundary {
 
 	aspect default {
-		draw shape color: #red empty: true;
+		draw shape color: #red wireframe: true;
 	}
 
 }

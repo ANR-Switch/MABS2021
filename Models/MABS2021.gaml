@@ -166,7 +166,7 @@ global {
 		// Create graph
 		write "Create graph...";
 		full_network <- as_driving_graph(Road, Crossroad);
-		full_network <- full_network with_optimizer_type optimizer_type;
+		full_network <- full_network with_shortest_path_algorithm optimizer_type;
 		full_network <- full_network use_cache memorize_shortest_paths;
 		in_roads <- Road where (each.start_node.type = "generator");
 		out_roads <- Road where (each.type != "motorway" and each.end_node.type = "exit");
